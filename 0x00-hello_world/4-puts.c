@@ -1,6 +1,5 @@
  #include <stdio.h>
 /**
- *
  * main - Entrypoint
  *
  * Return: Always 0 (success)
