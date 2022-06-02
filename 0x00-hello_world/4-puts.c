@@ -1,11 +1,12 @@
  #include <stdio.h>
-
- /**
+/**
+ *
  * main - Entrypoint
  *
- * Return: Always 0 (succes)
+ * Return: Always 0 (success)
  *
  */
+
 int main(void)
 
 {
