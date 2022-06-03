@@ -8,7 +8,8 @@
  */
 int main(void)
 {
-	srand(0);
+	int n;
+	rand();
 
 	if (n > 0)
 	{
