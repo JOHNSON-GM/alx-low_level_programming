@@ -12,15 +12,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("\n\n%lu is positive");
+		printf("\n\n%ld is positive");
 	}
 	else if (n < 0)
 	{
-		printf("%lu is negative");
+		printf("%ld is negative");
 	}
 	else if (n == 0)
 	{
-		printf("%lu is zero");
+		printf("%ld is zero");
 	}
 
 	return (0);
