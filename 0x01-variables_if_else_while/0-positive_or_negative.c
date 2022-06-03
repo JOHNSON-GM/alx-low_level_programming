@@ -9,7 +9,7 @@
 int main(void)
 {
 	int n;
-	srand(time(0));\n\n
+	srand(0);
 
 	if (n > 0)
 	{
