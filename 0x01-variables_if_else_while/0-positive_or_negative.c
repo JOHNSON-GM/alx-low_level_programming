@@ -8,12 +8,11 @@
  */
 int main(void)
 {
-	int n;
 	srand(0);
 
 	if (n > 0)
 	{
-		printf("%lu is positive");
+		printf("\n\n%lu is positive");
 	}
 	else if (n < 0)
 	{
