@@ -13,8 +13,11 @@ int main(void)
 	int X;
 
 	for (X = 123; X > 96; X--)
+
 	{
+
 		putchar(X);
+
 	}
 	putchar('\n');
 	return (0);
