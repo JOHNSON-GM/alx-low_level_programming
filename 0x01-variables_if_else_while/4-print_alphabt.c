@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * main - printhe alphabet in lowercase letters, except for e and q
@@ -8,12 +10,12 @@
  */
 int main(void)
 {
-		char ch = "a";
+		int i;
 
-		for (ch = "a"; ch <= "z"; ch++)
+		for (i = 97; i <= 123; i++)
 		{
-		if (ch != "e" && ch != "q")
-		putchar(ch);
+		if (i != 101 && i != 113)
+		putchar(i);
 		}
 		putchar("\n");
 
