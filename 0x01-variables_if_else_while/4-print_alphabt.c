@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- * main - printing letters in lowercase except q and e
+ * main - printhe alphabet in lowercase letters, except for e and q
  *
  * Return: Alwatys 0 (success)
  *
