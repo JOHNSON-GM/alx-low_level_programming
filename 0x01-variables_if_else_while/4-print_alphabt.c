@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - printing letters except q and e
+ * main - printing letters in lowercase except q and e
  *
  * Return: Alwatys 0 (success)
  *
@@ -16,5 +16,5 @@ int main(void)
 		}
 		putchar("\n");
 
-		return (0);
+	return (0);
 }
