@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-		char letter;
+		char text;
 
-		for (letter = "a"; letter <= "z"; letter++)
+		for (text = "a"; text <= "z"; text++)
 		{
-		if (letter != "e" && letter != "q")
-		putchar(letter);
+		if (text != "e" && text != "q")
+		putchar(text);
 		}
 		putchar("\n");
 
