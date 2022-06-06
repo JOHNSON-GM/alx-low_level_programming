@@ -12,7 +12,7 @@ int main(void)
 {
 	int X;
 
-	for (X = 123; X > 96; X--)
+	for (X = 122; X > 96; X--)
 
 	{
 
