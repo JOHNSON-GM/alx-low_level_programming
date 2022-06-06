@@ -11,8 +11,7 @@
  * */
 
 int main(void)
-
-{
+{	
 	int tens;
 	int ones;
 	
@@ -31,6 +30,7 @@ int main(void)
 	}
 	}
 	putchar('\n');
+
 	return (0);
 
 }
