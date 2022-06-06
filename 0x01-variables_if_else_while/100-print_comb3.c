@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
+ * main - Print the combinations of two digit numbers
  *
- * main - Print combinations of two digit numbers
- *
- * *
+ * 
  *
  * Return: Always 0 (Success)
  *
