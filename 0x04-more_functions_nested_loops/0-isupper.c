@@ -3,7 +3,7 @@
 /**
  * _isupper - checks if letter is uppercase or lowercase
  * Description: returns 1 when uppercase and 0 when lowercase
- * c - parameter to be used
+ * parameter 'c': - parameter to be used
  * Return: ALways 0 (success)
  */
 int _isupper(int c)
