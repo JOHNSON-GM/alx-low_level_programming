@@ -11,7 +11,7 @@ void positive_or_negative(int i)
 {
 
 	srand(time(0));
-	i = 0;
+	i = 1;
 
 	if (i > 0)
 	{
