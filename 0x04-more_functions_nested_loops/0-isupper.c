@@ -3,18 +3,18 @@
 /**
  * _isupper - checks if letter is uppercase or lowercase
  * Description: returns 1 when uppercase and 0 when lowercase
- * parameter 'c': - parameter to be used
- * Return: ALways 0 (success)
+ * @c: inout to be used
+ * return: ALways 0 (success)
  */
 int _isupper(int c)
 {
-	for (c = 'a'; c <= 'z'; c++)
+	if (c >= 'A' && c <= 'Z')
 	{
-		for (c = 'A'; c <= 'Z')
-		{
-			return (1);
-		}
-
+		return (1);
+	}
+	else
+	{
 		return (0);
 	}
 }
+
