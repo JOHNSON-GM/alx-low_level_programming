@@ -6,6 +6,7 @@
  * Return: ALways 0 (success)
  */
 int _isupper(int c);
+
 {
 	for(c = 'a'; c <= 'z'; c++)
 	{
