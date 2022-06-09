@@ -5,8 +5,7 @@
  * Description: returns 1 when uppercase and 0 when lowercase
  * Return: ALways 0 (success)
  */
-int _isupper(int c)
-
+int _isupper(int c);
 {
 	for(c = 'a'; c <= 'z'; c++)
 	{
