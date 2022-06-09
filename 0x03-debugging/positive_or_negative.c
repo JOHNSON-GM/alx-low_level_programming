@@ -2,32 +2,30 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entrypoint
+ * positive_or_negative - function to be used
  * @i: input character.
  * Return: Always 0 (success)
  *
  */
-void positive_or_negative(int i);
+void positive_or_negative(int i)
 {
-	int n;
 
 	srand(time(0));
-	n = 1;
+	i = 0;
 
-	if (n > 0)
+	if (i > 0)
 	{
-		printf("%d is positive\n", n);
+		printf("%d is positive\n", i);
 	}
-	else if (n < 0)
+	else if (i < 0)
 	{
-		printf("%d is negative\n", n);
+		printf("%d is negative\n", i);
 	}
-	else if (n == 0)
+	else if (i == 0)
 	{
-		printf("%d is zero\n", n);
+		printf("%d is zero\n", i);
 	}
 
-	return (0);
 }
 /**
  * main - tests function that prints if integer is positive or negative
@@ -41,6 +39,7 @@ int main(void)
 
 	i = 0;
 	positive_or_negative(i);
+
 	return (0);
 
 }
