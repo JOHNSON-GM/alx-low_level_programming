@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * puts2 - prints one char out of 2 of a string.
@@ -15,7 +16,7 @@ void puts2(char *str)
 
 		{
 
-			_putchar('\n');
+			putchar('\n');
 
 			break;
 
@@ -23,7 +24,7 @@ void puts2(char *str)
 
 		if (count % 2 == 0)
 
-			_putchar(str[count]);
+			putchar(str[count]);
 
 		count++;
 	}
