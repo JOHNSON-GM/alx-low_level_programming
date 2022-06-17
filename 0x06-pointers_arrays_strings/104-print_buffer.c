@@ -2,10 +2,9 @@
 #include <stdio.h>
 /**
  * print_line - prints a s bytes of a buffer
- * @c: buffer 
- * @s: bytes of buffer 
- * @l: line of buffer 
- *
+ * @c: buffer
+ * @s: bytes of buffer
+ * @l: line of buffer
  * Return: void
  */
 
@@ -19,9 +18,9 @@ for (x = 0; x <= 9; x++)
 		printf("%02x", c[l * 10 + x]);
 	else
 		printf("  ");
-	
+
 	if (x % 2)
-		
+
 		putchar(' ');
 
 }
@@ -38,7 +37,7 @@ for (y = 0; y <= s; y++)
 
 /**
  * print_buffer - prints a buffer
- * @b: buffer 
+ * @b: buffer
  * @size: size of buffer
  *
  * Return: void
