@@ -9,29 +9,18 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int x, y, sect;
 
-	int x = 0, y;
-	int match = 0;
-
-while (s[x] != '\0') /*loop through string*/
-{
-	
-	for (y = 0; accept[y] != '\0'; y++) /*loop through target*/
+	for (x = 0; *(accept + y) != '\0'; y++)
 	{
-		
-		if (s[x] == accept[y]) /*record at first match*/
+		if (*(s + x) == *(accept + y))
 		{
-			match++;
+			sect = 0;
 			break;
 		}
-		
-		if (accept[y + 1] == '\0' && s[x] != accept[y])
-			return (match);/*return if  doesn't match*/
+		if (sect == 1)
+			break;
 	}
-	x++;
-
+	return (x);
 }
-return (match); /* return num if all match till end */
 
-
-}
