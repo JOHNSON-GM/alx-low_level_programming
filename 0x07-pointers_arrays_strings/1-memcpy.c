@@ -17,12 +17,11 @@ int size = n;
 if (size > 0)
 {
 	int x;
+
 	for (x = 0; x < size; x++)
 		dest[x] = src[x];
 }
 
 return (dest);
-
-
 
 }
