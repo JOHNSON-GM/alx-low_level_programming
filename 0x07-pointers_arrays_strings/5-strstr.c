@@ -21,9 +21,9 @@ if (haystack[i] == needle[0])
 {
 
 x = i, y = 0;
-while (needle[j] != '\0')
+while (needle[y] != '\0')
 {
-if (haystack[x] == needle[j])
+if (haystack[x] == needle[y])
 x++, y++;
 	else
 			break;
