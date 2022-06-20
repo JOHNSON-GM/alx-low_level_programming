@@ -18,7 +18,7 @@ if (size > 0)
 {
 	int x;
 
-	for (i = 0; i < size; i++)
+	for (x = 0; x < size; x++)
 		s[x] = b;
 
 }
