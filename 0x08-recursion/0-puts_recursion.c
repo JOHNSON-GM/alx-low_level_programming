@@ -1,8 +1,11 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * _puts_recursion - prints out a string
+ *
  * @s:string to be printed
+ *
  */
 
 void _puts_recursion(char *s)
