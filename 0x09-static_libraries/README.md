@@ -1,1 +1,1 @@
-Thisn is a project on creating static libraries.
+s is a project on static libraries.
