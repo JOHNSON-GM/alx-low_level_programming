@@ -20,8 +20,11 @@ char *create_array(unsigned int size, char c)
 	if (str == NULL)
 		return(NULL);
 
-	for(x = 0; x < size; x++)
-		arr[x] = c;
-
+	x = 0;
+	while (x < size)
+	{
+		str[i] = c;
+			x++;
+	}
 		return(str);
 }
