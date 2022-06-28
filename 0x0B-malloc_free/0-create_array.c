@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 
 
@@ -19,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	str = malloc(sizeof(char) * size);
 
 	if (str == NULL)
-		return(NULL);
+		return (NULL);
 
 	x = 0;
 	while (x < size)
@@ -27,5 +28,5 @@ char *create_array(unsigned int size, char c)
 		str[x] = c;
 			x++;
 	}
-		return(str);
+		return (str);
 }
