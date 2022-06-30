@@ -55,7 +55,7 @@ char *str_concat(char *s1, char *s2)
 	while (*s1)
 		*tmp++ = *s1++;
 	 printf("checking:%ld\n",sizeof s1);
-	 *tmp++ = *s2++;
+	while ((*tmp++ = *s2++));
 		
 	 printf("tmp:%c ",*tmp);
 	 
