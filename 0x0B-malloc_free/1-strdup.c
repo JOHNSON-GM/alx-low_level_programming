@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * _strdup - copy
@@ -14,7 +16,7 @@ char *_strdup(char *str)
 	if (!str)
 		return (NULL);
 
-	while (*(str + i))
+	while (*(str + 1))
 		i++;
 	i++;
 	s = malloc(sizeof(char) * i);
