@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * argstostr - prints args
  * @ac: takes in width of grid
