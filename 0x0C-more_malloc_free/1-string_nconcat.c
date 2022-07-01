@@ -30,15 +30,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		n = strlen(s2);
 
-	printf("str:%s\n", s1);
-
-	printf("str:%s\n", s2);
-
-
 
 
 	str = malloc(a + n + 1);
-	printf("str:%s\n", str);
+
 
 	if (str == NULL)
 
