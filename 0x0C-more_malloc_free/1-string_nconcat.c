@@ -6,32 +6,38 @@
 /**
  * string_nconcat - concatenates two strings.
  * @s1: first string
- * @s)2: second string
+ * @s2: second string
  * @n: index
  * Return: char pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-/**	int a;*/
+	int a;
 	char *str, *ptr;
-/**	if (n >= strlen(s1))
+
+	if (n >= strlen(s1))
 
 	a = strlen(s1);
 
-	else s1 = "";*/
+	else
+		s1 = "";
+
 	if (n >= strlen(s2))
+
 		s2 = "";
 
-	else n = strlen(s2);
+	else
+		n = strlen(s2);
 
-	 printf("str:%s\n", s1);
-	 printf("str:%s\n", s2);
+	printf("str:%s\n", s1);
+
+	printf("str:%s\n", s2);
 
 
-		
 
-	str = malloc(n - 5);
+
+	str = malloc(a + n + 1);
 	printf("str:%s\n", str);
 
 	if (str == NULL)
@@ -44,8 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		*ptr++ = *s1++;
 
-	while ((*ptr++ = *s2++)) 
+	while ((*ptr++ = *s2++))
 		;
-
 	return (str);
 }
