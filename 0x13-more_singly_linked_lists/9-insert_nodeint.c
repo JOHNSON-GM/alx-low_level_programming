@@ -17,11 +17,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	if (head == NULL)
 		return (NULL);
-	/*allocate memory to new node and check if empty*/
 	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 		return (NULL);
-	/*assign value at index*/
+
 	new_node->n = n;
 	if (idx == 0)
 	{
