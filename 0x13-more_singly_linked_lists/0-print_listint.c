@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - prints content of the string
+ * print_listint - prints content of the string
  * @h: singly linked list
  * Return: prints elements of the list
  */
