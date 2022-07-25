@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include <string.h>
+
 
 /**
  * read_textfile - reads the content of the file
@@ -16,21 +16,26 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t frd, fwr;
 	char *out;
 
-	if (filename == Null)
+	if (!filename)
 		return (0);
 
-	x = fopen(filename, O_RDONLY);
+	x = open(filename, O_RDONLY);
 
 	if (x == -1)
 		return (0);
 
 	out = malloc(sizeof (char) * (letters));
 
-	if (out == Null)
+	if (!out)
 		return (0);
 
 	frd = read(x, out, letters);
-	fwr = write(STDOUT_FILENO out, frd);
+	if (frd == -1)
+			return (0);
+	fwr = write(STDOUT_FILENO, out, frd);
+	
+	free(out);
+	close (x);
 
-	return (frd);
+	return (fwr);
 }
