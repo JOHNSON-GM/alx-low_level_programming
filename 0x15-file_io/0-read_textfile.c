@@ -24,18 +24,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (x == -1)
 		return (0);
 
-	out = malloc(sizeof (char) * (letters));
+	out = malloc(sizeof(char) * (letters));
 
 	if (!out)
 		return (0);
 
 	frd = read(x, out, letters);
 	if (frd == -1)
-			return (0);
+		return (0);
 	fwr = write(STDOUT_FILENO, out, frd);
-	
+
 	free(out);
-	close (x);
+	close(x);
 
 	return (fwr);
 }
