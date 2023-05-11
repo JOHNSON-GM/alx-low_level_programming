@@ -1,17 +1,47 @@
 #include "search_algos.h"
 
 /**
-  * binary_search - Searches for a value in a sorted array
-  *                 of integers using binary search.
-  * @array: A pointer to the first element of the array to search.
-  * @size: The number of elements in the array.
-  * @value: The value to search for.
-  *
-  * Return: If the value is not present or the array is NULL, -1.
-  *         Otherwise, the index where the value is located.
-  *
-  * Description: Prints the [sub]array being searched after each change.
-  */
+ * binary_search - searches for a value in a sorted array of integers
+ * using the binary search algorithm
+ * @array: array of integers
+ * @size: size of array
+ * @value: value to search for
+ * Return: index of value or -1 if not found
+ *
+ * FUNCTIONALITY
+ *
+ * In the main function, we create an array of integers and calculate
+ * its size using the sizeof operator.
+ * We then call the binary_search function three times
+ * with different values of value.
+ *
+ * In the binary_search function, we first check if the array is NULL.
+ * If it is, we print a message indicating so and return -1.
+ *
+ * We then initialize three variables left, right,
+ * and mid to implement the binary search algorithm.
+ * left and right represent the leftmost and rightmost indices of the
+ * subarray being searched, and mid represents the middle index.
+ *
+ * We then enter a while loop that continues until
+ * left is greater than right.
+ * In each iteration of the loop,
+ * we calculate mid as the average of left and right.
+ * We then print the subarray being searched using a for loop.
+ *
+ * We then check if the value at index mid is equal to value.
+ * If it is, we return mid.
+ * If array[mid] is less than value, we update left to mid + 1.
+ * If array[mid] is greater than value, we update right to mid - 1.
+ *
+ * If we exit the while loop without finding value,
+ * we print a message indicating so and return -1.
+ *
+ * Note that the function assumes that the array is sorted in
+ * ascending order and that value does not
+ * appear more than once in the array.
+ */
+
 int binary_search(int *array, size_t size, int value)
 {
 	size_t i, left, right;
